@@ -7,7 +7,7 @@ package:
 source:
   fn: azure-mgmt-storage-{{ version }}.zip
   url: https://pypi.io/packages/source/a/azure-mgmt-storage/azure-mgmt-storage-{{ version }}.zip
-  md5: 2fc64591ed3ae702e520cee906a76ed6
+  md5: b1fc3a293051dee35dffe12d618f925581d6536c94ca5c05b69461ce941125a1
   
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
