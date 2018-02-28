@@ -1,26 +1,29 @@
+{% set name = "azure-mgmt-storage" %}
 {% set version = "1.5.0" %}
+{% set sha256 = "b1fc3a293051dee35dffe12d618f925581d6536c94ca5c05b69461ce941125a1" %}
 
 package:
-  name: azure-mgmt-storage
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: azure-mgmt-storage-{{ version }}.zip
-  url: https://pypi.io/packages/source/a/azure-mgmt-storage/azure-mgmt-storage-{{ version }}.zip
-  md5: 071aa80f61b1297c66b1b5c0efa25b3d
-  
+  fn: {{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  sha256: {{ sha256 }}
+
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
   number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
     - setuptools
-    - azure-mgmt-common
   run:
     - python
-    - azure-mgmt-common
+    - azure-mgmt-common >=1.1
+    - msrestazure >=0.4.11
 
 test:
   imports:
