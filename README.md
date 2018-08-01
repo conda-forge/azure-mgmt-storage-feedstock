@@ -14,12 +14,15 @@ Summary: Microsoft Azure Storage Resource Management Client Library for Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/azure-mgmt-storage-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/azure-mgmt-storage-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/azure-mgmt-storage-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/azure-mgmt-storage-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-mgmt-storage/badges/version.svg)](https://anaconda.org/conda-forge/azure-mgmt-storage)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-mgmt-storage/badges/downloads.svg)](https://anaconda.org/conda-forge/azure-mgmt-storage)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-azure--mgmt--storage-green.svg)](https://anaconda.org/conda-forge/azure-mgmt-storage) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/azure-mgmt-storage.svg)](https://anaconda.org/conda-forge/azure-mgmt-storage) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/azure-mgmt-storage.svg)](https://anaconda.org/conda-forge/azure-mgmt-storage) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/azure-mgmt-storage.svg)](https://anaconda.org/conda-forge/azure-mgmt-storage) |
 
 Installing azure-mgmt-storage
 =============================
