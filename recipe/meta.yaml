@@ -1,6 +1,6 @@
 {% set name = "azure-mgmt-storage" %}
-{% set version = "4.0.0" %}
-{% set sha256 = "fbed7ccd0d1567a0b201784c477b128a90434b1bf8ecd13179c376253418adcf" %}
+{% set version = "4.1.0" %}
+{% set sha256 = "520ed07254bda2d9bab6759bafc1ab849f4789372ff6ba4d051db53ee21c2ceb" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
