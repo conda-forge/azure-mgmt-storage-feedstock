@@ -1,6 +1,6 @@
 {% set name = "azure-mgmt-storage" %}
-{% set version = "6.0.0" %}
-{% set sha256 = "5cccfe6af0529a8a8a0557d130191a4a269fd2eac13ba6d6abd97ca851eef55d" %}
+{% set version = "8.0.0" %}
+{% set sha256 = "636778912823cebed1c212e4feacc4885d9e49e19a047da20fca9393bc6fac33" %}
 
 package:
   name: {{ name|lower }}
@@ -37,7 +37,7 @@ test:
 about:
   home: https://github.com/Azure/azure-sdk-for-python
   license: Apache-2.0
-  summary: 'Microsoft Azure Storage Resource Management Client Library for Python'
+  summary: Microsoft Azure Storage Resource Management Client Library for Python
 
 extra:
   recipe-maintainers:
