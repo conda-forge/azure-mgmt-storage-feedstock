@@ -35,8 +35,9 @@ test:
     - python -m unittest discover -p "test_storage_*.py"
 
 about:
-  home: https://github.com/Azure/azure-sdk-for-python
-  license: Apache-2.0
+  home: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-mgmt-storage
+  license: MIT
+  license_file: LICENSE
   summary: 'Microsoft Azure Storage Resource Management Client Library for Python'
 
 extra:
