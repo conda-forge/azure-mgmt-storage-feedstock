@@ -1,11 +1,11 @@
-About azure-mgmt-storage
-========================
+About azure-mgmt-storage-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-storage-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-mgmt-storage
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-storage-feedstock/blob/main/LICENSE.txt)
 
 Summary: Microsoft Azure Storage Resource Management Client Library for Python
 
