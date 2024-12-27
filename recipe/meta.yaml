@@ -8,26 +8,28 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - msrest >=0.7.1
     - azure-common ~=1.1
     - azure-mgmt-core >=1.3.2,<2.0.0
     - typing_extensions >=4.3.0  # TODO: Remove when py38 is minimum supported
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - azure
     - azure.mgmt
