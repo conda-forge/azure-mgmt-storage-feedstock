@@ -20,12 +20,13 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
-    - msrest >=0.7.1
-    - azure-common ~=1.1
+    - isodate >=0.6.1
+    - azure-common >=1.1
     - azure-mgmt-core >=1.3.2,<2.0.0
-    - typing_extensions >=4.3.0  # TODO: Remove when py38 is minimum supported
+    - typing_extensions >=4.6.0
 
 test:
   requires:
