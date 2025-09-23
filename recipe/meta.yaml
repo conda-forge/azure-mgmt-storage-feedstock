@@ -1,6 +1,6 @@
 {% set name = "azure-mgmt-storage" %}
-{% set version = "23.0.1" %}
-{% set sha256 = "c3ab2ac9352d1c01d85b56d6716dcce1e4680f920b148a24b4369bb91b9223b4" %}
+{% set version = "23.1.0" %}
+{% set sha256 = "2bdd922f90c92f8f901e732d3463d90cee6617c7f795e0cb47244ecd0ae98b20" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +25,7 @@ requirements:
     - python >={{ python_min }}
     - isodate >=0.6.1
     - azure-common >=1.1
-    - azure-mgmt-core >=1.5.0
+    - azure-mgmt-core >=1.6.0
     - typing_extensions >=4.6.0
 
 test:
