@@ -1,6 +1,6 @@
 {% set name = "azure-mgmt-storage" %}
-{% set version = "23.1.0" %}
-{% set sha256 = "2bdd922f90c92f8f901e732d3463d90cee6617c7f795e0cb47244ecd0ae98b20" %}
+{% set version = "24.0.0" %}
+{% set sha256 = "b1ae225ef87ada85f29c02e406140ab5895285ca64de2bcfe50b631c4818a337" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - msrest >=0.7.1
     - python >={{ python_min }}
     - isodate >=0.6.1
     - azure-common >=1.1
