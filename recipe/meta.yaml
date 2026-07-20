@@ -1,6 +1,6 @@
 {% set name = "azure-mgmt-storage" %}
-{% set version = "25.0.0" %}
-{% set sha256 = "52c4bb1fb395fcfa7a2e8fb024c1dabc5a67bd6fa23c0d2d5a7fb29314f172d2" %}
+{% set version = "25.1.0" %}
+{% set sha256 = "cc4bd2158fd0dd80639142af06dc70c119bbfd6f79d53da4482e0b2c849af7ca" %}
 
 package:
   name: {{ name|lower }}
